@@ -1,0 +1,29 @@
+{
+  "name": "Flashcards-APP",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/emilenfc/Flashcards-APP.git",
+  "author": "IYADUKUNZE Emile <iyaemile4@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --exec ts-node src/index.ts",
+    "build": "tsc",
+    "dev": "ts-node-dev --transpile-only --no-notify --exit-child src/index.ts",
+    "generate": "ts-node --transpile-only src/schema.ts"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "nodemon": "^2.0.22",
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "apollo-server": "^3.1.1",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "graphql": "^15.5.1",
+    "nexus": "^1.1.0"
+  }
+}
